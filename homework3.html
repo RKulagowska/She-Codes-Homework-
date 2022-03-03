@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <title>Salon</title>
+  </head>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0px 5px 240px 550px;
+    }
+    li {
+      display: inline-block;
+      font-size: 24px;
+      color: rgb(134, 38, 126);
+      padding: 10px 15px;
+    }
+    h2 {
+      color: rgb(134, 38, 126);
+      text-align: right;
+      margin: 10px 50px;
+    }
+    h1 {
+      color: rgb(134, 38, 126);
+      text-align: center;
+    }
+
+    .container {
+      background-image: url("https://kremidotyk.pl/wp-content/uploads/2019/10/krem-i-dotyk-salon-kosmetyczny-warszawa-ursus_52a.jpg");
+      background-size: 100%;
+    }
+    .container2 {
+      background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    }
+    .container3 {
+      background: #c4c1e0;
+    }
+    .new2 {
+      text-align: center;
+    }
+    hr {
+      width: 99%;
+      height: 0.7px;
+      background: rgb(134, 38, 126);
+    }
+    img {
+      display: block;
+      max-width: 15.5%;
+    }
+    p {
+      font-size: 20px;
+      line-height: 1.5;
+      text-align: justify;
+      margin-right: 50px;
+      margin-left: 250px;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      color: rgb(134, 38, 126);
+      padding: 7px 14px;
+      background: #e6e5e9;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px grey;
+      border-color: #e6e5e9;
+      transition: all 200ms ease-in-out;
+    }
+    button:hover {
+      color: #f6f2fe;
+      background: rgb(134, 38, 126);
+      cursor: pointer;
+    }
+    a {
+      display: block;
+      margin: 0 auto;
+    }
+
+    div {
+      text-align: center;
+    }
+    span {
+      color: rgb(134, 38, 126);
+      font-weight: bolder;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <ul>
+        <li>Start</li>
+        <li>/</li>
+        <li>O nas</li>
+        <li>/</li>
+        <li>Zabiegi</li>
+        <li>/</li>
+        <li>Cennik</li>
+        <li>/</li>
+        <li>Dojazd</li>
+      </ul>
+      <h2>...<em>bo najważniejsza jest jakość!</em></h2>
+    </div>
+    <div class="container2">
+      <br />
+      <h1><strong>Aktualne promocje w salonie</strong></h1>
+      <hr />
+      <div>
+        <img
+          src="https://images.assets-landingi.com/1avMKCjluSvGDj8G/spa_promocje_.png"
+          alt=""
+          style="float: left"
+        />
+      </div>
+
+      <p>
+        Zapraszamy Państwa serdecznie do naszego salonu na 4 godziny relaksu w
+        promocyjnych cenach. Teraz
+        <strong>od poniedziałku do piątku w godzinach od 12:00 do 16:00</strong>
+        mogą Państwo skorzystać z bogatej oferty masaży, zabiegów i rytuałów po
+        mocno obniżonych cenach.
+        <br />
+        <strong
+          >Oferujemy 20% zniżki na wszystkie dostępne w naszej ofercie masaże,
+          zabiegi i rytuały</strong
+        >
+        z wyjątkiem masaży 30-minutowych.
+        <br />
+        Promocja „Happy Hours” nie łączy się z innymi promocjami. Promocja ważna
+        jest do odwołania.
+      </p>
+      <hr />
+      <br />
+    </div>
+    <div class="container3">
+      <img
+        src="https://lh3.googleusercontent.com/proxy/ddzDr8lvJvzHtkAk-FdkOwaJyaEblHGqYAC-_HqyQ-PG5lhxPjN_r5Il4jOAfdoFUw3V1oIK6IUg5Agx2_73FT5nYwTMBWgjkH8HrwDfDbDTOhzWS48pJJvTog"
+        alt=""
+        style="float: right"
+      />
+      Salon Urody,
+      <div>
+        ul. Narwik 25/77,
+        <div>
+          Warszawa 01-471
+          <div>
+            tel: +48 669 999 999
+            <div>Pn-Pt <span>7.00-21.00 </span> So <span>8.00-15.00</span></div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <button>Kontakt</button>
+
+      <br />
+      <a
+        class="new2"
+        href="https://pl.wikipedia.org/wiki/HTTP_cookie"
+        target="_blank"
+      >
+        Polityka Cookies
+      </a>
+      <br />
+    </div>
+    <script>
+      function res() {
+        let name = prompt("Podaj imię");
+        let email = prompt("Podaj adres e-mail");
+        let news = prompt("Twoja wiadomość");
+        if (news === "") {
+          alert("Nie podałeś żadnej wiadomość");
+        } else {
+          alert(
+            "Dziękujemy za informację. Wkrótce odpowiemy na Twoje zapytanie drogą emailową. Wiadomość wyślemy pod wskazany adres e-mail: " +
+              email
+          );
+        }
+      }
+
+      let contact = document.querySelector("button");
+      contact.addEventListener("click", res);
+    </script>
+  </body>
+</html>
